@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://cloudflare-dns.com/dns-query</string>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>1.1.1.1 (DNS over HTTPS)</string>
+			<key>PayloadIdentifier</key>
+			<string>com.oneonevpn.dns.standard.https.payload</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>FF94F681-C189-5EFF-879E-30B8A41D6704</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Fast, private DNS. No filtering. Encrypts every DNS lookup on this device with Cloudflare DNS over HTTPS.</string>
+	<key>PayloadDisplayName</key>
+	<string>1.1.1.1 (DNS over HTTPS)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.oneonevpn.dns.standard.https</string>
+	<key>PayloadOrganization</key>
+	<string>1.1.1.1 for iPad</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>16283A95-2DA5-5931-B08D-7BA5C1EB5425</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

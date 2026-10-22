@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.3</string>
+					<string>1.0.0.3</string>
+					<string>2606:4700:4700::1113</string>
+					<string>2606:4700:4700::1003</string>
+				</array>
+				<key>ServerName</key>
+				<string>family.cloudflare-dns.com</string>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>1.1.1.1 for Families (Malware + Adult) (DNS over TLS)</string>
+			<key>PayloadIdentifier</key>
+			<string>com.oneonevpn.dns.family.tls.payload</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>0E38B9CB-B466-5CB8-9BFF-93BEB57BD638</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Blocks malware, phishing and adult content. Encrypts every DNS lookup on this device with Cloudflare DNS over TLS.</string>
+	<key>PayloadDisplayName</key>
+	<string>1.1.1.1 for Families (Malware + Adult) (DNS over TLS)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.oneonevpn.dns.family.tls</string>
+	<key>PayloadOrganization</key>
+	<string>1.1.1.1 for iPad</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>2C9C57FB-7D2E-505A-8E2C-4AB1472A5C78</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
