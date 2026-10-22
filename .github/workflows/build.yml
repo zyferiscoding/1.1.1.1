@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  profiles:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Profiles are up to date
+        run: |
+          python3 tools/make_profiles.py
+          git diff --exit-code docs/profiles
+      - name: Lint profiles
+        run: plutil -lint docs/profiles/*.mobileconfig
+
+  app:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Xcode project
+        run: |
+          brew install xcodegen
+          cd app && xcodegen generate
+      - name: Build for iPad simulator
+        run: |
+          xcodebuild -project app/OneOneVPN.xcodeproj -scheme OneOneVPN \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build

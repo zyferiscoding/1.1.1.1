@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.1.1.1 for iPad</title>
+<style>
+  :root { --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --card:#f5f5f7; --accent:#f38020; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#000; --fg:#f5f5f7; --muted:#a1a1a6; --card:#1c1c1e; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:40px; margin:0 0 4px; } h1 span { color:var(--accent); }
+  p.lead { color:var(--muted); margin-top:0; }
+  .card { background:var(--card); border-radius:16px; padding:20px; margin:16px 0; }
+  .card h2 { margin:0 0 4px; font-size:20px; } .card p { margin:0 0 12px; color:var(--muted); }
+  a.btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600;
+          padding:10px 16px; border-radius:10px; margin:4px 8px 4px 0; }
+  a.btn.alt { background:transparent; color:var(--accent); border:1.5px solid var(--accent); }
+  ol { padding-left:20px; } li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>1.1.1.1</span> for iPad</h1>
+  <p class="lead">Encrypt every DNS lookup on your iPad with Cloudflare's 1.1.1.1. Open this page in <b>Safari</b> on the iPad and tap a profile.</p>
+
+  <div class="card">
+    <h2>1.1.1.1</h2>
+    <p>Fast, private DNS. No filtering.</p>
+    <a class="btn" href="profiles/1.1.1.1-standard-https.mobileconfig">Install (HTTPS)</a>
+    <a class="btn alt" href="profiles/1.1.1.1-standard-tls.mobileconfig">Install (TLS)</a>
+  </div>
+  <div class="card">
+    <h2>1.1.1.1 for Families: Malware</h2>
+    <p>Blocks known malware and phishing domains.</p>
+    <a class="btn" href="profiles/1.1.1.1-malware-https.mobileconfig">Install (HTTPS)</a>
+    <a class="btn alt" href="profiles/1.1.1.1-malware-tls.mobileconfig">Install (TLS)</a>
+  </div>
+  <div class="card">
+    <h2>1.1.1.1 for Families: Malware + Adult</h2>
+    <p>Also blocks adult content.</p>
+    <a class="btn" href="profiles/1.1.1.1-family-https.mobileconfig">Install (HTTPS)</a>
+    <a class="btn alt" href="profiles/1.1.1.1-family-tls.mobileconfig">Install (TLS)</a>
+  </div>
+
+  <div class="card">
+    <h2>After tapping Install</h2>
+    <ol>
+      <li>Tap <b>Allow</b> when Safari asks to download a configuration profile.</li>
+      <li>Open <b>Settings</b> → <b>Profile Downloaded</b> (near the top) → <b>Install</b>.</li>
+      <li>Check it: visit <a href="https://one.one.one.one/help/">one.one.one.one/help</a>. It should say <i>Using DNS over HTTPS (DoH): Yes</i> (or DoT).</li>
+    </ol>
+    <p>To remove it: Settings → General → VPN &amp; Device Management → pick the profile → Remove Profile.</p>
+  </div>
+</main>
+</body>
+</html>
